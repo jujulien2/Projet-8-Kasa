@@ -1,0 +1,16 @@
+.containMain {
+  margin-top: 1em;
+  margin-bottom: 3em;
+  margin-left: 6em;
+  margin-right: 6em;
+}
+.containMain img {
+  margin-bottom: 6em;
+  width: 100%;
+}
+
+.cards {
+  background-color: #F6F6F6;
+  height: 1000px;
+  border-radius: 25px;
+}/*# sourceMappingURL=Main.css.map */
