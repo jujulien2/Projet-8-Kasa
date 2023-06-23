@@ -1,0 +1,33 @@
+.cardsOfHome{
+    list-style: none;
+   width: calc(100% - 110px);
+   padding-bottom: 80px;
+   padding-top: 80px;
+   padding-left: 0;
+    margin: 0;
+    gap: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    li{
+        position: relative;
+        width: calc((100% / 3) - (70px / 3));
+        height: 350px;
+        img{
+            filter: brightness(0.8);
+            border-radius: 10px;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        p{
+            font-weight: 500;
+            position: absolute;
+            bottom: 15px;
+            width: 150px;
+            left: 10px;
+            color: white;
+            margin: 0;
+        }
+       
+    }
+}

@@ -1,0 +1,33 @@
+.cardsOfHome {
+  list-style: none;
+  width: calc(100% - 110px);
+  padding-bottom: 80px;
+  padding-top: 80px;
+  padding-left: 0;
+  margin: 0;
+  gap: 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cardsOfHome li {
+  position: relative;
+  width: calc(33.3333333333% - 23.3333333333px);
+  height: 350px;
+}
+.cardsOfHome li img {
+  filter: brightness(0.8);
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.cardsOfHome li p {
+  font-weight: 500;
+  position: absolute;
+  bottom: 15px;
+  width: 150px;
+  left: 10px;
+  color: white;
+  margin: 0;
+}/*# sourceMappingURL=CardsHome.css.map */

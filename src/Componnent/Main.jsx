@@ -1,15 +1,19 @@
 import React from 'react';
 import '../Styles/Main.css'
-import PictureHome from '../Assets/sectionHome.png'
+import PictureMainHome from '../Assets/PictureMainHome.png'
+import CardsHome from './CardsHome';
+
 
 const Body = () => {
     return (
         <div className='containMain'>
-            <img src={PictureHome} alt="pictureHome" />
-            <div className='cards'>
-                <ul>
-                    <li></li>
-                </ul>
+            <div className='pictureHome'>
+                <img src={PictureMainHome} alt="pictureHome" />
+                <div className='textPicture'>Chez vous, partout et ailleurs</div>
+            </div>
+
+            <div className='backCards'>
+                <CardsHome />
             </div>
 
 
