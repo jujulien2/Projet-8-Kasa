@@ -4,15 +4,14 @@ import ListCards from '../InformationsCards.json'
 
 const CardOpenned = () => {
     return (
-        ListCards.map((infos => {
 
-            <ul>
-                <li key={infos.id}>
-                    <img src={infos.cover} alt="" />
+        <div>
+            <img src={ListCards.cover} alt="" />
 
-                </li>
-            </ul>
-        }))
+        </div>
+
+
+
     );
 };
 

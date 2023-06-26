@@ -7,8 +7,8 @@ body {
   justify-content: space-between;
   margin-top: 1em;
   margin-bottom: 3em;
-  margin-left: 6em;
-  margin-right: 6em;
+  margin-left: 8em;
+  margin-right: 8em;
   align-items: center;
 }
 
@@ -27,4 +27,22 @@ body {
   text-decoration: underline;
   color: #FF6060;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    padding-left: 10px;
+    margin: 0;
+    justify-content: space-evenly;
+  }
+  .header img {
+    height: 45px;
+  }
+  .header ul {
+    padding-right: 1em;
+    gap: 1em;
+  }
+  .header li {
+    font-size: 17px;
+  }
 }/*# sourceMappingURL=HeaderHome.css.map */

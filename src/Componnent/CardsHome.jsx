@@ -9,7 +9,7 @@ const CardsHome = () => {
 
         <ul className='cardsOfHome'>
             {ListCards.map((infos) => (
-                <li key={infos.id}> <Link to="/CardOpenned/:id">
+                <li key={infos.id}> <Link to={`/CardOpenned/${infos.id}`}>
                     <img src={infos.cover} alt="imageOfCards" />
                     <p className='titleCards'>{infos.title}</p>
                 </Link>

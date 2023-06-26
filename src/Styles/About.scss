@@ -1,0 +1,117 @@
+
+$main-red-color : #FF6060;
+$second-color : #F6F6F6;
+
+
+.containMainAbout{
+    margin-top: 1em;
+    margin-bottom: 3em;
+    margin-left: 8em;
+  margin-right: 8em;
+    .pictureAbout{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    height: 300px;
+    margin-bottom: 2em;
+    img{
+        filter: brightness(0.6);
+        object-fit: cover;
+            border-radius: 25px;
+            width: 100%;
+            height: 100%;
+    }}
+}
+
+// about details : 
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.accordion{
+    font-size: 18px;
+    width:60%;
+    display: flex;
+
+    ul{
+        width: 100%;
+        list-style: none;
+    }
+    li{
+        margin-bottom: 2em;
+    }
+}
+
+
+
+.titleAboutDetails{
+    border-radius: 6px;
+    width: 100%;
+    background-color:$main-red-color ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    h2{
+        margin: 0;
+        font-weight: 400;
+        font-size: 24px;
+      padding: 10px;
+    }
+    i{
+        padding-right: 15px;
+        cursor: pointer;
+    }
+}
+
+.content{
+    max-height: 150px;
+    transition: max-height 1.4s;
+    p{
+        background-color: $second-color;
+        color: $main-red-color;
+        margin: 0;
+        padding: 20px;
+    }
+}
+.hide{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+ 
+    p{
+        background-color: $second-color;
+        color: $main-red-color;
+        margin: 0;
+        padding: 20px;
+    
+    }
+}
+
+// Arrows's Animation : 
+
+.fa-chevron-down{
+    animation: spinArrowDown forwards 0.4s;
+}
+@keyframes spinArrowDown {
+    0% { 
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.fa-chevron-up{
+    animation: spinArrowUp forwards 0.4s;
+
+}
+@keyframes spinArrowUp {
+    0% { 
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

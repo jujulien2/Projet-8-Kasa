@@ -5,6 +5,8 @@ import Main from './Main'
 import About from '../Componnent/About'
 import Layout from './Layout';
 import CardOpenned from './CardOpenned';
+import ErrorUrl from './ErrorUrl';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/About" element={<About />} />
           <Route path="/CardOpenned/:id" element={<CardOpenned />} />
+          <Route path="*" element={<ErrorUrl />} />
         </Routes>
       </Layout>
     </Router>)
