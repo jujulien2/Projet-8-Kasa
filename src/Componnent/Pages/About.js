@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import PictureAbout from '../Assets/PictureAbout.png'
-import '../Styles/About.css'
-import AboutDetails from './AboutDetails';
+import PictureAbout from '../../Assets/PictureAbout.png'
+import '../../Styles/AboutPage/About.css'
+import AboutDetails from '../AboutDetails';
 
 const About = () => {
     const [clicked, setClicked] = useState(false)

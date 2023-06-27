@@ -1,11 +1,11 @@
 
-import '../Styles/App.css'
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Main from './Main'
-import About from '../Componnent/About'
+import Main from '../Componnent/Pages/Main'
+import About from '../Componnent/Pages/About'
 import Layout from './Layout';
-import CardOpenned from './CardOpenned';
-import ErrorUrl from './ErrorUrl';
+import CardOpenned from '../Componnent/Pages/CardOpenned';
+import ErrorUrl from '../Componnent/Pages/ErrorUrl';
 
 
 function App() {

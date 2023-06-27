@@ -1,6 +1,6 @@
 import React from 'react';
 import ListCards from '../InformationsCards.json'
-import '../Styles/CardsHome.css'
+import '../Styles/HomePage/CardsHome.css'
 import { Link } from 'react-router-dom';
 
 const CardsHome = () => {

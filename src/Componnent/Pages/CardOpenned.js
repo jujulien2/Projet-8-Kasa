@@ -1,5 +1,4 @@
 import React from 'react';
-import ListCards from '../InformationsCards.json'
 import { Link, useParams } from 'react-router-dom'
 
 

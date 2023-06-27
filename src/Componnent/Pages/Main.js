@@ -1,7 +1,7 @@
 import React from 'react';
-import '../Styles/Main.css'
-import PictureMainHome from '../Assets/PictureMainHome.png'
-import CardsHome from './CardsHome';
+import '../../Styles/HomePage/Main.css'
+import PictureMainHome from '../../Assets/PictureMainHome.png'
+import CardsHome from '../CardsHome';
 
 
 const Body = () => {
