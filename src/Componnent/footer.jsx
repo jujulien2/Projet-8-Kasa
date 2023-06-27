@@ -9,7 +9,7 @@ const footer = () => {
             <div className='containFooter'>
                 <div> <img src={LogoBlack} alt="Logo black" /></div>
 
-                <div>    <img src={Anotation} alt="Anotation" /></div>
+                <div >    <img className='anotationFooter' src={Anotation} alt="Anotation" /></div>
 
 
             </div>

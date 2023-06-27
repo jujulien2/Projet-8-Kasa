@@ -115,3 +115,38 @@ $second-color : #F6F6F6;
         transform: rotate(360deg);
     }
 }
+
+// mobile version : 
+@media only screen and (max-width: 480px) {
+    .containMainAbout{
+        margin-left: 1em;
+    margin-right: 1em;
+    .pictureAbout{
+        height: 223px;
+        img{
+            border-radius: 15px;
+        }
+    }
+    }
+    // accordion : 
+    .wrapper{
+        .accordion{
+            width: 100%;
+            ul{
+                padding: 0;
+                li{
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+
+    .titleAboutDetails{
+        h2{
+            font-size: 13px;
+        }
+    }
+    .content p {
+        font-size: 13px;
+    }
+ }

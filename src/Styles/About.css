@@ -105,4 +105,31 @@
   100% {
     transform: rotate(360deg);
   }
+}
+@media only screen and (max-width: 480px) {
+  .containMainAbout {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .containMainAbout .pictureAbout {
+    height: 223px;
+  }
+  .containMainAbout .pictureAbout img {
+    border-radius: 15px;
+  }
+  .wrapper .accordion {
+    width: 100%;
+  }
+  .wrapper .accordion ul {
+    padding: 0;
+  }
+  .wrapper .accordion ul li {
+    margin-bottom: 1em;
+  }
+  .titleAboutDetails h2 {
+    font-size: 13px;
+  }
+  .content p {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=About.css.map */

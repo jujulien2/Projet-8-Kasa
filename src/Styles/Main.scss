@@ -37,3 +37,38 @@ img{
     display: flex;
     justify-content: center;
 }
+
+// mobile version : 
+@media only screen and (max-width: 480px) {
+ .containMain{
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
+  .textPicture{
+    font-size: 24px;
+    width: 70%;
+    padding-left: 15px;
+  }
+  .pictureHome{
+    margin-bottom: 2em;
+    justify-content: flex-start;
+    height: 111px;
+    img{
+      border-radius: 12px;
+    }
+  }
+ }
+ 
+// cards : 
+.backCards{
+
+  .cardsOfHome{
+    flex-direction: column;
+    width: 100%;
+    li{
+      width: 100%;
+    }
+  }
+}
+}

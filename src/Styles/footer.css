@@ -5,6 +5,9 @@
   position: relative;
   bottom: 0px;
 }
+.footer .anotationFooter {
+  height: 25px;
+}
 
 .containFooter {
   display: flex;

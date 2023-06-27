@@ -33,4 +33,33 @@
   border-radius: 25px;
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .containMain {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .containMain .textPicture {
+    font-size: 24px;
+    width: 70%;
+    padding-left: 15px;
+  }
+  .containMain .pictureHome {
+    margin-bottom: 2em;
+    justify-content: flex-start;
+    height: 111px;
+  }
+  .containMain .pictureHome img {
+    border-radius: 12px;
+  }
+  .backCards .cardsOfHome {
+    flex-direction: column;
+    width: 100%;
+  }
+  .backCards .cardsOfHome li {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Main.css.map */

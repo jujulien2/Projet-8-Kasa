@@ -1,13 +1,15 @@
 import React from 'react';
 import ListCards from '../InformationsCards.json'
+import { Link, useParams } from 'react-router-dom'
 
 
 const CardOpenned = () => {
+    const { CardOpennedId } = useParams();
     return (
 
         <div>
-            <img src={ListCards.cover} alt="" />
-
+            <h2>{CardOpennedId}</h2>
+            <Link to='/'>Back</Link>
         </div>
 
 
