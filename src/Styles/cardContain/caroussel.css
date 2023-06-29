@@ -1,0 +1,31 @@
+.wrapperCaroussel {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  margin-left: 8em;
+  margin-right: 8em;
+  height: 515px;
+  position: relative;
+}
+.wrapperCaroussel .caroussel i {
+  position: absolute;
+  color: white;
+  z-index: 2;
+}
+.wrapperCaroussel .caroussel img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+
+.fa-chevron-right {
+  right: 20px;
+  bottom: 215px;
+}
+
+.fa-chevron-left {
+  left: 20px;
+  bottom: 215px;
+}/*# sourceMappingURL=caroussel.css.map */
