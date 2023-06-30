@@ -6,12 +6,12 @@
   height: 515px;
   position: relative;
 }
-.wrapperCaroussel .caroussel i {
+.wrapperCaroussel i {
   position: absolute;
   color: white;
   z-index: 2;
 }
-.wrapperCaroussel .caroussel img {
+.wrapperCaroussel img {
   position: absolute;
   height: 100%;
   width: 100%;
