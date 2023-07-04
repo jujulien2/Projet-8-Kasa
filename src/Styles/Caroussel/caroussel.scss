@@ -1,0 +1,78 @@
+.wrapperCaroussel{
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 8em;
+    margin-right: 8em;
+    height: 515px;
+    // overflow: hidden;
+    position: relative;
+        i{
+            position: absolute;
+            color: white;
+            z-index: 4;
+            
+        }
+        img{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+    
+}
+.fa-chevron-right{
+    right: 20px;
+    bottom: 215px;
+}
+.fa-chevron-left{
+ left: 20px;
+    bottom:215px;
+}
+
+.active{
+display: block;
+transition: all 0.8s;
+
+}
+.inactive{
+display: block;
+opacity: 0;
+transition: all 0.8s;
+
+}
+
+.paginationCaroussel{
+    position: absolute;
+    top: 93%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 500;
+    z-index: 4;
+}
+
+@media only screen and (max-width: 480px)  {
+    .wrapperCaroussel{
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 380px;
+        i{
+            font-size: 3em;
+        }
+        img{
+            object-fit: fill;
+        }
+    }
+    .fa-chevron-right{
+        right: 20px;
+        bottom: 165px;
+    }
+    .fa-chevron-left{
+     left: 20px;
+        bottom:165px;
+
+    }
+    
+   
+}

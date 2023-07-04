@@ -55,6 +55,9 @@
   .containMain .pictureHome img {
     border-radius: 12px;
   }
+  .backCards {
+    background-color: white;
+  }
   .backCards .cardsOfHome {
     flex-direction: column;
     width: 100%;

@@ -26,60 +26,18 @@
   justify-content: center;
 }
 
-.accordion {
+.accordionWrapper {
   font-size: 18px;
-  width: 60%;
+  width: 80%;
   display: flex;
 }
-.accordion ul {
+.accordionWrapper ul {
   width: 100%;
   list-style: none;
+  padding: 0;
 }
-.accordion li {
+.accordionWrapper li {
   margin-bottom: 2em;
-}
-
-.titleAboutDetails {
-  border-radius: 6px;
-  width: 100%;
-  background-color: #FF6060;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-}
-.titleAboutDetails h2 {
-  margin: 0;
-  font-weight: 400;
-  font-size: 24px;
-  padding: 10px;
-}
-.titleAboutDetails i {
-  padding-right: 15px;
-  cursor: pointer;
-}
-
-.content {
-  max-height: 150px;
-  transition: max-height 1.4s;
-}
-.content p {
-  background-color: #F6F6F6;
-  color: #FF6060;
-  margin: 0;
-  padding: 20px;
-}
-
-.hide {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease;
-}
-.hide p {
-  background-color: #F6F6F6;
-  color: #FF6060;
-  margin: 0;
-  padding: 20px;
 }
 
 .fa-chevron-down {
@@ -131,5 +89,11 @@
   }
   .content p {
     font-size: 13px;
+  }
+  .accordionWrapper {
+    width: 100%;
+  }
+  .accordionWrapper .CollapseAbout h2 {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=About.css.map */

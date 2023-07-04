@@ -2,13 +2,13 @@
     width: 100%;
     height: 200px;
     background-color: black;
-    position: relative;
-    bottom: 0px;
+   
     .anotationFooter{
         height: 25px;
     }
 }
 .containFooter{
+    margin-top: 5em;
     display: flex;
     justify-content: center;
     flex-direction: column;

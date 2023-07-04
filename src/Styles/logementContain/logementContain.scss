@@ -1,9 +1,101 @@
+$main-red-color : #FF6060;
+
 .textOfCardWrapper{
+    height: auto;
     margin-bottom: 3em;
     margin-left: 8em;
     margin-right: 8em;
-    height: 315px;
-    background-color: red;
+    height: auto;
+
+}
+.descriptionLogement{
     display: flex;
     justify-content: space-between;
+    color: $main-red-color;
+    h1{
+        font-weight: 500;
+    }
+}
+// tags of cards : 
+.tagCardWrapper{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 3em;
+    font-size: 14px;
+}
+.tagCard{
+    display: flex;
+    align-items: center;
+    padding: 5px 1.5em 5px 1.5em;
+    p{
+        margin: 0;
+    }
+    color: white;
+    background-color: #FF6060;
+    border-radius: 20px;
+}
+// Host Details : 
+.hostDescription{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    img{
+        border-radius: 100%;
+    }
+    p{
+        font-size: 18px;
+        width: 60px;
+    }
+}
+// collapse css : 
+.collapseCardWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapperCollapse{
+    width: 40%;
+}
+
+@media only screen and (max-width: 480px)  {
+    .textOfCardWrapper{
+        margin-left: 2em;
+        margin-right: 2em;
+        height: auto;
+    }
+    .descriptionLogement{
+        flex-direction: column;
+    }
+    .textLeftSide{
+        h1{
+
+            font-size: 21px;
+        }
+        .tagCardWrapper{
+            font-size: 11px;
+        }
+    }
+    .textRightSide{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+    .collapseCardWrapper{
+        flex-direction: column;
+        gap: 1em;
+        .wrapperCollapse{
+            width: 100%;
+            h2{
+                font-size: 15px;
+            }
+        }
+    }
+    .hostDescription{
+        p{
+            font-size: 15px;
+        }
+        img{
+            height: 70px;
+        }
+    }
+   
 }

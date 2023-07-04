@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Styles/Layout/footer.css'
+import '../../Styles/footer/footer.css'
 import LogoBlack from '../../Assets/LogoBlack.png'
 import Anotation from '../../Assets/Anotation.png'
 

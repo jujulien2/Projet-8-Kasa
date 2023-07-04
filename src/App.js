@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Main from '../Pages/Main'
-import About from './About'
-import Layout from '../Layout/Layout';
-import CardOpenned from './Logement';
-import ErrorUrl from './ErrorUrl';
-import Caroussel from '../Logements/Caroussel';
+import Main from './Pages/Main'
+import About from './Pages/About'
+import Layout from './Componnent/Layout/Layout';
+import CardOpenned from './Pages/Logement';
+import ErrorUrl from './Pages/Error';
+import Caroussel from './Componnent/caroussel/Caroussel';
 
 
 function App() {

@@ -1,0 +1,65 @@
+$main-red-color : #FF6060;
+$second-color : #F6F6F6;
+//  logement's cards collapse :
+.CollapseLogement{
+    border-radius: 6px;
+    width: 100%;
+    background-color:$main-red-color ;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+        margin: 0;
+        font-weight: 400;
+        font-size: 18px;
+      padding: 10px;
+    }
+    i{
+        padding-right: 15px;
+        cursor: pointer;
+    }
+}
+//  About page collapse :
+
+.CollapseAbout{
+    border-radius: 6px;
+    width: 100%;
+    background-color:$main-red-color ;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+        margin: 0;
+        font-weight: 400;
+        font-size: 24px;
+      padding: 10px;
+    }
+    i{
+        padding-right: 15px;
+        cursor: pointer;
+    }
+}
+.content{
+    transition: max-height 1.4s;
+    p{
+        background-color: $second-color;
+        color: $main-red-color;
+        margin: 0;
+        padding: 10px;
+    }
+}
+.hide{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+ 
+    p{
+        background-color: $second-color;
+        color: $main-red-color;
+        margin: 0;
+        padding: 20px;
+    
+    }
+}
