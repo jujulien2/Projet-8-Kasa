@@ -20,7 +20,7 @@ const Collapse = ({ title, text, index, cssCollapse }) => {
 
             <div className={`${clicked === index ? 'content' : 'hide'}`}>
 
-                <p>{text}</p>
+                <div>{text}</div>
 
             </div>
 

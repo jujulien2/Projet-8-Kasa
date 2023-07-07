@@ -41,11 +41,15 @@
 .content {
   transition: max-height 1.4s;
 }
-.content p {
-  background-color: #F6F6F6;
+.content div {
   color: #FF6060;
+  background-color: #F6F6F6;
   margin: 0;
-  padding: 10px;
+  padding: 18px;
+}
+.content p {
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .hide {

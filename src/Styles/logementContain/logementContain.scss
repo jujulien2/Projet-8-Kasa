@@ -1,7 +1,6 @@
 $main-red-color : #FF6060;
 
 .textOfCardWrapper{
-    height: auto;
     margin-bottom: 3em;
     margin-left: 8em;
     margin-right: 8em;
@@ -13,14 +12,39 @@ $main-red-color : #FF6060;
     justify-content: space-between;
     color: $main-red-color;
     h1{
+        margin-bottom: 0;
         font-weight: 500;
     }
+    p{
+        margin-top: 5px;
+    }
 }
+// rate
+
+.ratingWrapper{
+    position: relative;
+}
+.ratingEmpty{
+display: flex;
+font-size: 1.5em;
+gap: 10px;
+color: rgba(216, 216, 216, 0.973);
+position: absolute;
+z-index: 2;
+}
+.rating{
+display: flex;
+font-size: 1.5em;
+gap: 10px;
+position: absolute;
+z-index: 4;
+}
+
 // tags of cards : 
 .tagCardWrapper{
     display: flex;
     gap: 1em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     font-size: 14px;
 }
 .tagCard{
@@ -37,10 +61,13 @@ $main-red-color : #FF6060;
 // Host Details : 
 .hostDescription{
     display: flex;
-    gap: 2em;
+    gap: 3em;
+    justify-content: flex-end;
     align-items: center;
+    margin-bottom: 10px;
     img{
         border-radius: 100%;
+        height: 74px;
     }
     p{
         font-size: 18px;
@@ -57,6 +84,9 @@ $main-red-color : #FF6060;
 }
 
 @media only screen and (max-width: 480px)  {
+    .tagCardWrapper{
+        margin-bottom: 0;
+    }
     .textOfCardWrapper{
         margin-left: 2em;
         margin-right: 2em;
@@ -75,6 +105,10 @@ $main-red-color : #FF6060;
         }
     }
     .textRightSide{
+        margin-top: 1em;
+        gap: 2em;
+        align-items: baseline;
+        flex-direction: row-reverse;
         display: flex;
         justify-content: space-between;
         margin-bottom: 1em;
@@ -90,11 +124,22 @@ $main-red-color : #FF6060;
         }
     }
     .hostDescription{
+        gap: 5px;
+        width: 100%;
         p{
-            font-size: 15px;
+            font-size: 12px;
         }
         img{
-            height: 70px;
+            height: 45px;
+        }
+    }
+    .ratingWrapper{
+        width: 100%;
+        height: 100%;
+
+        .rating, .ratingEmpty{
+            gap: 8px;
+            font-size: 1em;
         }
     }
    

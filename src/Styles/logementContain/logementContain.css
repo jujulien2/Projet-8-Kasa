@@ -1,5 +1,4 @@
 .textOfCardWrapper {
-  height: auto;
   margin-bottom: 3em;
   margin-left: 8em;
   margin-right: 8em;
@@ -12,13 +11,38 @@
   color: #FF6060;
 }
 .descriptionLogement h1 {
+  margin-bottom: 0;
   font-weight: 500;
+}
+.descriptionLogement p {
+  margin-top: 5px;
+}
+
+.ratingWrapper {
+  position: relative;
+}
+
+.ratingEmpty {
+  display: flex;
+  font-size: 1.5em;
+  gap: 10px;
+  color: rgba(216, 216, 216, 0.973);
+  position: absolute;
+  z-index: 2;
+}
+
+.rating {
+  display: flex;
+  font-size: 1.5em;
+  gap: 10px;
+  position: absolute;
+  z-index: 4;
 }
 
 .tagCardWrapper {
   display: flex;
   gap: 1em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   font-size: 14px;
 }
 
@@ -36,11 +60,14 @@
 
 .hostDescription {
   display: flex;
-  gap: 2em;
+  gap: 3em;
+  justify-content: flex-end;
   align-items: center;
+  margin-bottom: 10px;
 }
 .hostDescription img {
   border-radius: 100%;
+  height: 74px;
 }
 .hostDescription p {
   font-size: 18px;
@@ -57,6 +84,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .tagCardWrapper {
+    margin-bottom: 0;
+  }
   .textOfCardWrapper {
     margin-left: 2em;
     margin-right: 2em;
@@ -72,6 +102,10 @@
     font-size: 11px;
   }
   .textRightSide {
+    margin-top: 1em;
+    gap: 2em;
+    align-items: baseline;
+    flex-direction: row-reverse;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em;
@@ -86,10 +120,22 @@
   .collapseCardWrapper .wrapperCollapse h2 {
     font-size: 15px;
   }
+  .hostDescription {
+    gap: 5px;
+    width: 100%;
+  }
   .hostDescription p {
-    font-size: 15px;
+    font-size: 12px;
   }
   .hostDescription img {
-    height: 70px;
+    height: 45px;
+  }
+  .ratingWrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .ratingWrapper .rating, .ratingWrapper .ratingEmpty {
+    gap: 8px;
+    font-size: 1em;
   }
 }/*# sourceMappingURL=logementContain.css.map */

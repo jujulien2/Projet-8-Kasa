@@ -3,6 +3,17 @@ import '../../Styles/logementContain/logementContain.css'
 
 
 const DescriptionCard = ({ items }) => {
+    const ratingValue = parseInt(items.rating)
+    const stars = []
+    const starsEmpty = []
+    for (let i = 0; i < ratingValue; i++) {
+        stars.push(<i key={i} className="fa-solid fa-star"></i>)
+    }
+    for (let i = 0; i < 5; i++) {
+        starsEmpty.push(<i key={i} className="fa-solid fa-star"></i>)
+    }
+
+
     return (
 
         <div className='descriptionLogement'>
@@ -24,7 +35,20 @@ const DescriptionCard = ({ items }) => {
                     <p>{items.host.name}</p>
                     <img src={items.host.picture} alt='hostDetails'></img>
                 </div>
-                <div className='rate'></div>
+                <div className='ratingWrapper'>
+
+                    <div className='ratingEmpty'>
+                        {starsEmpty.map((star, index) => (
+                            <div key={index}>{star}</div>
+                        ))}
+                    </div>
+
+                    <div className='rating'>
+                        {stars.map((star, index) => (
+                            <div key={index} >{star}</div>
+                        ))}
+                    </div>
+                </div>
 
 
             </div>
@@ -35,6 +59,3 @@ const DescriptionCard = ({ items }) => {
 };
 
 export default DescriptionCard;
-// {/* <div className='rating'>
-//             <i class="fa-solid fa-star"></i>
-//         </div> */}

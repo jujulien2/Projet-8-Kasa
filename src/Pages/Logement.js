@@ -37,16 +37,16 @@ const CardOpenned = () => {
 
             <div className='textOfCardWrapper'>
                 {filteredCards.map((items) => (
-
-                    <div key={items.id}>
+                    console.log(items.rating),
+                    < div key={items.id} >
                         <DescriptionCard key={items.id} items={items} />
 
 
 
                         <div className='collapseCardWrapper'>
                             <div className='wrapperCollapse'> <Collapse items={items} cssCollapse={'CollapseLogement'} title={'Description'} text={items.description} /></div>
-                            <div className='wrapperCollapse'> <Collapse items={items} cssCollapse={'CollapseLogement'} title={'Équipements'} text={items.equipments.map((contain) => (
-                                <p>{contain}</p>
+                            <div className='wrapperCollapse'> <Collapse items={items} cssCollapse={'CollapseLogement'} title={'Équipements'} text={items.equipments.map((contain, index) => (
+                                <p key={index}>{contain}</p>
                             ))} /></div>
 
                         </div>
@@ -55,7 +55,7 @@ const CardOpenned = () => {
                 ))}
             </div>
 
-        </div>
+        </div >
     );
 };
 
