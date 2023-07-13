@@ -20,20 +20,17 @@ const CardOpenned = () => {
     }
     const pics = filteredCards[0].pictures;
 
+
     return (
         <div>
             <div className='wrapperCaroussel'>
-                {pics.map((items, index) => (
-                    <Caroussel key={index} arrayPictures={pics} image={items} />
-
-                ))}
-
+                <Caroussel key={pics.index} arrayPictures={pics} image={pics.items} />
             </div>
 
 
             <div className='textOfCardWrapper'>
                 {filteredCards.map((items) => (
-                    console.log(items.rating),
+
                     < div key={items.id} >
                         <DescriptionCard key={items.id} items={items} />
 
