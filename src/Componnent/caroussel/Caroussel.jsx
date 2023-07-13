@@ -22,7 +22,6 @@ const Caroussel = ({ arrayPictures }) => {
                     <i className="fa-solid fa-chevron-left fa-6x" onClick={prevPicture}></i>
                     <i className="fa-solid fa-chevron-right fa-6x" onClick={nextPicture}></i>
                     <div className='paginationCaroussel'>{`${currentIndex + 1} / ${arrayPictures.length}`}</div>
-
                 </>
 
             ) : null}

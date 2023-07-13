@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import ListCards from '../informationsCards.json'
 import Caroussel from '../Componnent/caroussel/Caroussel';
 import DescriptionCard from '../Componnent/descriptionLogements/DescriptionLogement';
@@ -14,16 +14,12 @@ import Error from '../Pages/Error';
 const CardOpenned = () => {
     const { id } = useParams();
     const filteredCards = ListCards.filter((card) => card.id === id);
-    // ci-dessus on fait correspondre l'id du fichier json a celui de la page 
+
     if (filteredCards.length === 0) {
-        return <Error />; // Utilisez ici votre composant Error
+        return <Error />;
     }
     const pics = filteredCards[0].pictures;
 
-    // Si l'id n'est pas valide, affiche le composant Error à la place
-
-
-    //  ci-dessus puisque filtercards est un tableau qui correspond toujours en fonction de la page ouverte alors il affichera les images de cette page en question
     return (
         <div>
             <div className='wrapperCaroussel'>
