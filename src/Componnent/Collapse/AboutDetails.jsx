@@ -3,7 +3,7 @@
 const AboutDetails = [
     {
         title: 'Fiabilité',
-        text: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
+        text: "Les annonces de test postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
     },
     {
         title: 'Respect',
