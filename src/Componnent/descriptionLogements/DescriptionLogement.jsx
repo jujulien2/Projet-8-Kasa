@@ -3,6 +3,7 @@ import '../../Styles/logementContain/logementContain.css'
 
 
 const DescriptionCard = ({ items }) => {
+    // parsInt fait en sorte de comprendre uniquement les nombres dans la string 
     const ratingValue = parseInt(items.rating)
     const stars = []
     const starsEmpty = []

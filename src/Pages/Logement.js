@@ -8,9 +8,6 @@ import '../Styles/Collapse/collapse.css'
 import Error from '../Pages/Error';
 
 
-
-
-
 const CardOpenned = () => {
     const { id } = useParams();
     const filteredCards = ListCards.filter((card) => card.id === id);
