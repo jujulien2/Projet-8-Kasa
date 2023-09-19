@@ -12,6 +12,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/Projet-8-Kasa/" element={<Main />} />
           <Route path="/About" element={<About />} />
           <Route path="/CardOpenned/:id" element={<CardOpenned />} />
           <Route path="*" element={<ErrorUrl />} />
